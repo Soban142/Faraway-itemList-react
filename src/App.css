@@ -1,38 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header{
+  background-color: rgb(243, 183, 71);
+  padding: 2em 0;
+  letter-spacing: 3px;
+}
+
+.enter-item{
+  background-color: rgb(245, 78, 18);
+  display: flex;
+  justify-content: center;
+  padding: 2em 0;
+  column-gap: 1em;
+}
+
+.quantity-selection{
+  padding: 0.3em 0.6em;
+  border-radius: 20px;
+  background-color: rgb(170, 236, 170);
+  border: none;
+}
+
+.text_value{
+  background-color: rgb(170, 236, 170);
+  border-radius: 20px;
+  padding: 0.3em 0.6em;
+  border: none;
+}
+
+.addBtn{
+  padding: 0.2em 1em;
+  background-color: rgb(170, 236, 170);
+  border-radius: 20px;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.items-div{
+  background-color: #282c34;
+  position: relative;
+  width: 100vw;
+  min-height: 100%;
+}
+
+.item-container{
+  /* min-height: 100%; */
+  /* min-height: 70vh; */
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em 10em;
+  column-gap: 9em;
+  row-gap: 4em;
+}
+
+.item-div {
+  color: white;
+}
+
+.item-div > span{
+  color: white;
+  margin-left: 5px;
+}
+
+.removeBtn{
+  border: none;
+  color: red;
+  text-transform: uppercase;
+  padding: 0.2em 0.4em;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.clearDiv, .sortingSelection{
+  padding: 0.3em 0.6em;
+  background-color: rgb(170, 236, 170);
+  border-radius: 40px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.sorting_deletion-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.stats{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  padding: 2em;
+  background-color: burlywood;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
